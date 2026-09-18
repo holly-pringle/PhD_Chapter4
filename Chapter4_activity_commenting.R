@@ -1,12 +1,5 @@
-# ACTIVITY (DIURNALITY) DATA CLEANING
-# pct_diurnal_species is calculated by POOLING detection counts (n_diurnal,
-# n_nocturnal) across ALL sites per species (not averaged per-site), giving
-# more weight to sites with more detections. This is applied as a single
-# fixed species-level trait (like mass and diet), including for Panthera
-# pardus, whose Kenya and Nepal detections are pooled together rather than
-# kept separate -- consistent with how mass/diet are treated for this species.
-
-brazil_30min<-read.csv("brazil_30min.csv")
+# ACTIVITY (DIURNALITY) 
+brazil_30min<-read.csv("brazil_30min.csv") #https://drive.google.com/drive/folders/1cS2ekm7iep97Rzqh9GXaJIDGbLMAfXsz?usp=drive_link
 nepal_30min<-read.csv("nepal_30min4.csv")
 kenya_30min<-read.csv("kenya_30min.csv")
 head(brazil_30min)
